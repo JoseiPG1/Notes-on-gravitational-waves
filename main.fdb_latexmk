@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1734635405.36198 "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves/main.tex" "main.pdf" "main" 1734635405.71496 0
-  "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves/main.tex" 1734635405.14563 261 8f6ee5df4c21fb05b99d4b36628347b4 ""
+["pdflatex"] 1734635671.85537 "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves/main.tex" "main.pdf" "main" 1734635672.18745 0
+  "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves/main.tex" 1734635671.66967 473 32ca0bd5a9a50edd340fb06e4c588382 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -14,6 +14,8 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
@@ -24,8 +26,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733927331.53012 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733926895 8221429 80dd5d253ef9dba42a4b3b572f28d5d1 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "main.aux" 1734635405.69286 346 63cbf09cb67c98e1cbb7e0395db4e28e "pdflatex"
-  "main.tex" 1734635405.14563 261 8f6ee5df4c21fb05b99d4b36628347b4 ""
+  "main.aux" 1734635672.16151 346 63cbf09cb67c98e1cbb7e0395db4e28e "pdflatex"
+  "main.tex" 1734635671.66967 473 32ca0bd5a9a50edd340fb06e4c588382 ""
   (generated)
   "main.aux"
   "main.log"
