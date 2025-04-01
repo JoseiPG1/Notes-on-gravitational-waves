@@ -1,0 +1,68 @@
+% type of document
+\documentclass{article}
+% new section new page
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+% hyperreferences
+\usepackage{hyperref}
+% align equation
+\usepackage{amsmath}
+% title
+\title{Personal notes on gravitational waves}
+% author
+\author{Jose Perdiguero Garate}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section*{Notation and conventions}
+
+I am working with the following conventions, for the metric tensor
+\begin{equation}
+    \left(-1, +1, +1, +1\right)
+\end{equation}
+
+\section{Linear general relativity}
+
+In this section I am presenting a general overview on how to build-up
+the Einstein's field equation, given a background metric tensor and a 
+perturbation tensor.
+
+\subsection{General overview}
+
+Decomposed the metric tensor as the sum of a background metric, in this case 
+the flat spacetime Minkowski metric $\eta_{\mu\nu}$,plus a perturbation 
+$h_{\mu\nu}$ as follows
+\begin{equation}
+    \label{flat metric tensor}
+    g_{\mu\nu} =  \eta_{\mu\nu} + h_{\mu\nu}.
+\end{equation}
+Using the definition of the Kronecker delta object it is straightforward to
+obtain the inverse tensor of the perturbation
+\begin{equation}
+    \label{definition delta}
+    \delta^{\mu}_{\nu} = g^{\mu\sigma}g_{\sigma\nu}.
+\end{equation}
+Replacing Eq.(\ref{flat metric tensor}) in to Eq.(\ref{definition delta}), and
+neglecting second order terms in the perturbation field, leads to
+\begin{equation}
+    h^{\mu\nu} = -\eta^{\mu\alpha}\eta^{\nu\beta}h_{\alpha\beta},
+\end{equation}
+notice that, in order to upper/lower the indices of the perturbation I am only
+using the background metric.\footnote{Including the perturbation tensor leads
+to second order terms, which I am ignoring.} Schematically, second order terms
+are neglected 
+\begin{align}
+    h_{\mu\nu}h_{\alpha\beta} & \sim 0, & 
+    h_{\mu\nu}\partial_{\gamma} h_{\alpha\beta} & \sim 0, &
+    \partial_{\delta} h_{\mu\nu}\partial_\gamma h_{\alpha\beta} & \sim 0.
+\end{align}
+This is the general overview of the fundamental field of general relativity,
+which at its core is the metric tensor. In the following subsection, I will
+be computing the Einstein's field equations for the metric tensor written 
+in Eq.\ref{flat metric tensor}.
+
+\section{Curved gravity}
+
+\end{document}
