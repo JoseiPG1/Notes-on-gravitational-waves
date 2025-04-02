@@ -7,6 +7,8 @@
 \usepackage{hyperref}
 % align equation
 \usepackage{amsmath}
+% figures such as square
+\usepackage{amssymb}
 % title
 \title{Personal notes on gravitational waves}
 % author
@@ -35,7 +37,7 @@ Decomposed the metric tensor as the sum of a background metric, in this case
 the flat spacetime Minkowski metric $\eta_{\mu\nu}$,plus a perturbation 
 $h_{\mu\nu}$ as follows
 \begin{equation}
-    \label{flat metric tensor}
+    \label{metric tensor}
     g_{\mu\nu} =  \eta_{\mu\nu} + h_{\mu\nu}.
 \end{equation}
 Using the definition of the Kronecker delta object it is straightforward to
@@ -44,7 +46,7 @@ obtain the inverse tensor of the perturbation
     \label{definition delta}
     \delta^{\mu}_{\nu} = g^{\mu\sigma}g_{\sigma\nu}.
 \end{equation}
-Replacing Eq.(\ref{flat metric tensor}) in to Eq.(\ref{definition delta}), and
+Replacing Eq.\eqref{metric tensor} in to Eq.\eqref{definition delta}, and
 neglecting second order terms in the perturbation field, leads to
 \begin{equation}
     h^{\mu\nu} = -\eta^{\mu\alpha}\eta^{\nu\beta}h_{\alpha\beta},
@@ -61,8 +63,160 @@ are neglected
 This is the general overview of the fundamental field of general relativity,
 which at its core is the metric tensor. In the following subsection, I will
 be computing the Einstein's field equations for the metric tensor written 
-in Eq.\ref{flat metric tensor}.
+in Eq.\eqref{metric tensor}.
 
-\section{Curved gravity}
+\subsection{Geometrical objects}
+
+The first object that is required to compute the Einstein's field equations is the
+connection. Working on a torsion-free manifold, the Levi-Civita connection is written
+as
+\begin{equation}
+    \label{levi civita connection}
+    \Gamma^{\mu}{}_{\alpha\beta} = \frac{1}{2}g^{\mu\rho}\left(
+        \partial_{\alpha}g_{\rho\beta} + \partial_{\beta}g_{\rho\alpha} -
+        \partial_{\rho}g_{\alpha\beta}.
+    \right)
+\end{equation}
+Replacing Eq.\eqref{metric tensor} in to Eq.\eqref{levi civita connection} leads to
+\begin{equation}
+    \Gamma^{\mu}{}_{\alpha\beta} = \frac{1}{2}\left(\eta^{\mu\rho} - h^{\mu\rho}\right)
+        \left(\partial_{\alpha}\eta_{\rho\beta} 
+        + \partial_{\beta}\eta_{\rho\alpha} 
+        - \partial_{\rho}\eta_{\alpha\beta}
+        + \partial_{\alpha}h_{\rho\beta} 
+        + \partial_{\beta}h_{\rho\alpha} 
+        - \partial_{\rho}h_{\alpha\beta}\right).
+\end{equation}
+Notice that, the only non-trivial contributions are the ones that are linear in the
+perturbation, additionally, the partial derivatives of the Minkowski's metric tensor vanishes,
+therefore, the connection coefficients are reduced to
+\begin{equation}
+    \label{levi civita connection flat + perturbation}
+    \Gamma^{\mu}{}_{\alpha\beta} = \frac{1}{2}\eta^{\mu\rho}
+        \left(\partial_{\alpha}h_{\rho\beta} + \partial_{\beta}h_{\rho\alpha} 
+        - \partial_{\rho}h_{\alpha\beta}\right).
+\end{equation}
+
+Next, compute the Riemann curvature tensor
+\begin{equation}
+    \label{riemann curvature tensor}
+    \mathcal{R}^{\rho}{}_{\sigma\mu\nu} = \partial_{\mu}\Gamma^{\rho}{}_{\sigma\nu}
+    - \partial_{\nu}\Gamma^{\rho}{}_{\sigma\mu} 
+    + \Gamma^{\gamma}{}_{\nu\sigma}\Gamma^{\rho}{}_{\mu\gamma}
+    + \Gamma^{\gamma}{}_{\mu\sigma}\Gamma^{\rho}{}_{\nu\gamma},
+\end{equation}
+however, instead of computing directly from the above equation, it is convenient to 
+notice the structure of the curvature tensor. The last two terms are quadratic in the 
+Levi-Civita connection, and, since the connection is written with perturbation, then,
+square terms in the connection vanishes, reducing the Riemann curvature tensor to
+\begin{equation}
+    \label{curvature tensor flat}
+    \mathcal{R}^{\rho}{}_{\sigma\mu\nu} = \partial_{\mu}\Gamma^{\rho}{}_{\sigma\nu}
+    - \partial_{\nu}\Gamma^{\rho}{}_{\sigma\mu}.
+\end{equation}
+Replacing Eq.\eqref{levi civita connection flat + perturbation} in to 
+Eq.\eqref{curvature tensor flat} leads to
+\begin{equation}
+    \mathcal{R}^{\rho}{}_{\sigma\mu\nu} = \frac{1}{2}\eta^{\rho \alpha}\partial_{\mu}\left(
+        \partial_{\sigma}h_{\alpha\nu} + \partial_{\nu}h_{\sigma\alpha}
+        - \partial_{\alpha}h_{\sigma\nu}\right) +
+        \frac{1}{2}\eta^{\rho \alpha}\partial_{\nu}\left(
+        \partial_{\sigma}h_{\alpha\mu} + \partial_{\mu}h_{\sigma\alpha}
+        - \partial_{\alpha}h_{\sigma\mu}\right),
+\end{equation}
+the above expression, can be simplified to
+\begin{equation}
+    \mathcal{R}^{\rho}{}_{\sigma\mu\nu} = \frac{1}{2}\eta^{\rho\alpha}\left(
+        \partial_{\mu}\partial_{\sigma}h_{\alpha\nu} 
+        - \partial_{\mu}\partial_{\alpha}h_{\sigma\nu}
+        - \partial_{\nu}\partial_{\sigma}h_{\mu\alpha}
+        + \partial_{\nu}\partial_{\alpha}h_{\mu\sigma}\right).
+\end{equation}
+
+From the Riemann tensor, it is straightforward to compute the Ricci tensor, by
+contracting their respective indices
+\begin{equation}
+    \mathcal{R}_{\sigma\nu} = \mathcal{R}^{\mu}{}_{\sigma\mu\nu}.
+\end{equation}
+A direct computation shows the structure of the Ricci tensor
+\begin{equation}
+    \label{ricci tensor flat + perturbation}
+    \mathcal{R}_{\sigma\nu} = \frac{1}{2}\left(
+        \partial^{\alpha}\partial_{\sigma}h_{\alpha\nu} 
+        -  \square h_{\sigma\nu} - \partial_{\nu}\partial_{\sigma}h
+        + \partial_{\nu}\partial^{\alpha}h_{\alpha\sigma}\right),
+\end{equation}
+where $\square$ is the d'Alembert operator and $h$ is the trace of the perturbation.
+
+In the same spirit, the curvature scalar can be obtained directly through
+the contraction of the Ricci tensor
+\begin{equation}
+    \mathcal{R} = g^{\mu\sigma}\mathcal{R}_{\mu\sigma}.
+\end{equation}
+This computation is straightforward
+\begin{equation}
+    \mathcal{R} = \left(\eta^{\mu\sigma} - h^{\mu\sigma}\right) \frac{1}{2}\left(
+        \partial^{\alpha}\partial_{\sigma}h_{\alpha\nu} 
+        -  \square h_{\sigma\nu} - \partial_{\nu}\partial_{\sigma}h
+        + \partial_{\nu}\partial^{\alpha}h_{\alpha\sigma}\right).
+\end{equation}
+Neglecting second order terms in the perturbation field, the scalar curvature is given
+by
+\begin{equation}
+    \label{curvature scalar flat + perturbation}
+    \mathcal{R} = \partial_{\mu}\partial_{\sigma}h^{\mu\sigma} - \square h
+\end{equation}
+
+Now, we can compute the Einstein's field equations without a cosmological constant
+\begin{equation}
+    \label{Einsteins field equation}
+    \mathcal{R}_{\mu\nu} - \frac{1}{2}\mathcal{R}g_{\mu\nu} = \frac{8\pi G}{c^4}
+    \mathcal{T}_{\mu\nu}
+\end{equation}
+where $\mathcal{T}_{\mu\nu}$ is the energy momentum tensor. Replacing 
+Eq.\eqref{ricci tensor flat + perturbation} and Eq.\eqref{curvature scalar flat + perturbation}
+in to Eq.\eqref{Einsteins field equation} leads to
+\begin{equation}
+        \partial^{\alpha}\partial_{\mu}h_{\alpha\nu} 
+        -  \square h_{\mu\nu} - \partial_{\nu}\partial_{\mu}h
+        + \partial_{\nu}\partial^{\alpha}h_{\alpha\mu}
+        - \left(\partial_{\alpha}\partial_{\beta}h^{\alpha\beta} - \square h\right)
+        \left(\eta_{\mu\nu} + h_{\mu\nu}\right) = \frac{16\pi G}{c^4}\mathcal{T}_{\mu\nu}.
+\end{equation}
+Just like before, neglecting second order terms in the perturbation, the above equation
+can be reduced to
+\begin{equation}
+    \label{einsteins equation flat + perturbation}
+        \partial^{\alpha}\partial_{\mu}h_{\alpha\nu} 
+        -  \square h_{\mu\nu} - \partial_{\nu}\partial_{\mu}h
+        + \partial_{\nu}\partial^{\alpha}h_{\alpha\mu}
+        - \eta_{\mu\nu}\partial_{\alpha}\partial_{\beta}h^{\alpha\beta} 
+        - \eta_{\mu\nu}\square h = \frac{16\pi G}{c^4}\mathcal{T}_{\mu\nu}.
+\end{equation}
+The above equation, can be written in a much more compact manner by using the following
+variable change\footnote{In the standard literature $X_{\mu\nu}$ is written as $\bar{h}$,
+but I strongly believed this leads to confunsions.}
+\begin{equation}
+    X_{\mu\nu} = h_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}h,
+\end{equation}
+which can be inverted through standard methods
+\begin{equation}
+    \label{variable change}
+    h_{\mu\nu} = X_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}X
+\end{equation}
+where $X$ is the trace of the tensor $X_{\mu\nu}$, and the tensor $X_{\mu\nu}$, also satisfies
+the relation $X = -h$. Replacing the variable change written in Eq.\eqref{variable change} in 
+Eq.\eqref{einsteins equation flat + perturbation} and simplifying terms, leads to
+\begin{equation}
+    \partial^{\alpha}\partial_{\mu}X_{\alpha\nu} + \partial_{\nu}\partial^{\alpha}X_{\alpha\mu}
+    - \square X_{\mu\nu} - \eta_{\mu\nu}\partial_{\alpha}\partial_{\beta}X^{\alpha\beta}
+    =  \frac{16\Pi G}{c^4}\mathcal{T}_{\mu\nu},
+\end{equation}
+which, in some sense has a more simple structure that Eq.\eqref{einsteins equation flat + perturbation},
+and also contains the wave operator. Nonetheless, this does not look like a gravitational 
+wave equations. In the next subsection, I will show you, how can you derived the gravitational
+wave equation from the above expression using a gauge transformation.
+
+
 
 \end{document}
