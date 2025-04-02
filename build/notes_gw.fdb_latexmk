@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1743612451.83386 "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" "build/notes_gw.pdf" "notes_gw" 1743612452.31097 0
-  "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" 1743612451.29477 9758 4b45dcfe0a632dbe7d2e7b9830c40df3 ""
+["pdflatex"] 1743618526.59356 "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" "build/notes_gw.pdf" "notes_gw" 1743618527.09668 0
+  "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" 1743618526.33945 14243 7b2c9ef8af5f588da6f3cbf190808c51 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -37,6 +37,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -84,10 +85,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733927331.53012 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733926895 8221429 80dd5d253ef9dba42a4b3b572f28d5d1 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "build/notes_gw.aux" 1743612452.25989 1449 d9b135667338df5fb049a5d947f70db5 "pdflatex"
-  "build/notes_gw.out" 1743612452.26028 469 c52eee28dab3ae58cbca05921e3b7bfa "pdflatex"
-  "build/notes_gw.toc" 1743612452.26046 248 f8f5e2eff6226a9cf3466ba9947fc06d "pdflatex"
-  "notes_gw.tex" 1743612451.29477 9758 4b45dcfe0a632dbe7d2e7b9830c40df3 ""
+  "build/notes_gw.aux" 1743618527.04557 1908 428f98d2ab5de9f05d4a5e59cda3352b "pdflatex"
+  "build/notes_gw.out" 1743618527.04615 629 907612e6df23bc50055e5e05e07c0dae "pdflatex"
+  "build/notes_gw.toc" 1743618527.04635 334 bad25f97a491db02eb8d43b1f10d3313 "pdflatex"
+  "notes_gw.tex" 1743618526.33945 14243 7b2c9ef8af5f588da6f3cbf190808c51 ""
   (generated)
   "build/notes_gw.aux"
   "build/notes_gw.log"

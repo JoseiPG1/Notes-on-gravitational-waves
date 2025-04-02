@@ -194,8 +194,8 @@ can be reduced to
         - \eta_{\mu\nu}\square h = \frac{16\pi G}{c^4}\mathcal{T}_{\mu\nu}.
 \end{equation}
 The above equation, can be written in a much more compact manner by using the following
-variable change\footnote{In the standard literature $X_{\mu\nu}$ is written as $\bar{h}$,
-but I strongly believed this leads to confunsions.}
+variable change\footnote{In the standard literature $X_{\mu\nu}$ is written as 
+$\bar{h}_{\mu\nu}$, but I strongly believed this leads to confusions.}
 \begin{equation}
     X_{\mu\nu} = h_{\mu\nu} - \frac{1}{2}\eta_{\mu\nu}h,
 \end{equation}
@@ -208,6 +208,7 @@ where $X$ is the trace of the tensor $X_{\mu\nu}$, and the tensor $X_{\mu\nu}$, 
 the relation $X = -h$. Replacing the variable change written in Eq.\eqref{variable change} in 
 Eq.\eqref{einsteins equation flat + perturbation} and simplifying terms, leads to
 \begin{equation}
+    \label{efe X}
     \partial^{\alpha}\partial_{\mu}X_{\alpha\nu} + \partial_{\nu}\partial^{\alpha}X_{\alpha\mu}
     - \square X_{\mu\nu} - \eta_{\mu\nu}\partial_{\alpha}\partial_{\beta}X^{\alpha\beta}
     =  \frac{16\Pi G}{c^4}\mathcal{T}_{\mu\nu},
@@ -217,6 +218,102 @@ and also contains the wave operator. Nonetheless, this does not look like a grav
 wave equations. In the next subsection, I will show you, how can you derived the gravitational
 wave equation from the above expression using a gauge transformation.
 
+\subsection{Gauge transformation}
+
+Consider the infinitesimal gauge coordinate transformation
+\begin{equation}
+    \label{gauge transformation}
+    x^{\mu} \longrightarrow x'^{\mu} =  x^{\mu} + \xi^{\mu},
+\end{equation}
+where $\xi^{\mu}$ is a small vector. Then, it is possible to obtain the relation
+between and the inverse relation of the coordinate transformation of their respective
+derivatives 
+\begin{align}
+    \label{gauge transformation derivatives}
+    \frac{\partial x'^{\alpha}}{\partial x^{\beta}} & = \delta^{\alpha}_{\beta} 
+    + \partial_{\beta} \xi^{\alpha} & 
+    \frac{\partial x^{\alpha}}{\partial x'^{\beta}} & = \delta^{\alpha}_{\beta} 
+    - \partial_{\beta} \xi^{\alpha}.
+\end{align}
+
+Using the above information, the metric tensor under a gauge coordinate transformation
+changes as 
+\begin{equation}
+    g'_{\alpha\beta} = \frac{\partial x^{\mu}}{\partial x'^{\alpha}}
+    \frac{\partial x^{\nu}}{\partial x'^{\beta}}g_{\mu\nu}.
+\end{equation}
+Using Eq.\eqref{gauge transformation derivatives} in the above equation, and neglecting
+second order terms in the perturbation, leads to
+\begin{equation}
+    g'_{\alpha\beta} = g_{\alpha\beta} - g_{\alpha\nu}\partial_{\beta}\xi^{\nu}
+    - g_{\mu\beta}\partial_{\alpha}\xi^{\mu}
+\end{equation}
+replacing the expressions for the metric tensor, see Eq.\eqref{metric tensor}, leads to
+\begin{equation}
+    \label{gauge transformation of perturbation}
+    h'_{\alpha\beta} = h_{\alpha\beta} - \partial_{\beta}\xi_{\alpha} 
+    - \partial_{\alpha}\xi_{\beta}.
+\end{equation}
+Is worth mention that the Riemann tensor is invariant under a gauge transformation. 
+Therefore, we have the freedom to choose or fix the vector $\xi^{\mu}$ as we liked. 
+Additionally, Eq.\eqref{gauge transformation of perturbation} is only valid using a 
+Minkowski background, if we were working on a curved spacetime background, there will
+be additional terms. As the rule of gauge transformation is written in 
+Eq.\eqref{gauge transformation of perturbation}, then is trivial to compute the gauge
+transformation of the auxiliary variable $X_{\mu\nu}$
+\begin{equation}
+    X_{\mu\nu} \to X'_{\mu\nu} = h'_{\mu\nu} 
+    - \frac{1}{2}\eta_{\mu\nu}\eta^{\alpha\beta}h'_{\alpha\beta},
+\end{equation}
+replacing the transformation rule leads to
+\begin{equation}
+    X'_{\mu\nu} = h_{\mu\nu} - \partial_{\nu}\xi_{\mu} 
+    - \partial_{\mu}\xi_{\nu}
+    - \frac{1}{2}\eta_{\mu\nu}\eta^{\alpha\beta}\left(
+    h_{\alpha\beta} - \partial_{\beta}\xi_{\alpha} - \partial_{\alpha}\xi_{\beta}\right).
+\end{equation}
+THe above expression can be simplified 
+\begin{equation}
+    X'_{\mu\nu} = X_{\mu\nu} - \partial_{\mu}\xi_{\nu} 
+    - \partial_{\nu}\xi_{\mu} + \eta_{\mu\nu}\partial^{\sigma}\xi_{\sigma},
+\end{equation}
+where I used the definition of the $X_{\mu\nu}$ tensor written in Eq.\eqref{variable change}. 
+Now, it is convenient to work with upper index, thus, using the inverse Minkowski metric we 
+can upper every index
+\begin{equation}
+    X'^{\alpha\beta} = X^{\alpha\beta} - \eta^{\mu\alpha}\partial_{\mu}\xi^{\beta} 
+    - \eta^{\nu\beta}\partial_{\nu}\xi^{\alpha} 
+    + \eta^{\alpha\beta}\partial^{\sigma}\xi_{\sigma}.
+\end{equation}
+At this point we take the divergence of $X_{\mu\nu}$
+\begin{equation}
+    \partial_{\beta}X'^{\alpha\beta} = \partial_{\beta}X^{\alpha\beta}
+    - \eta^{\mu\alpha}\partial_{\beta}\partial_{\mu}\xi^{\beta} 
+    - \eta^{\nu\beta}\partial_{\beta}\partial_{\nu}\xi^{\alpha} 
+    + \eta^{\alpha\beta}\partial_{\beta}\partial^{\sigma}\xi_{\sigma},
+\end{equation}
+after simplification of terms, leads to
+\begin{equation}
+    \partial_{\beta}X'^{\alpha\beta} = \partial_{\beta}X^{\alpha\beta}
+    - \square \xi^{\alpha}.
+\end{equation}
+At this point, recall that we still have the freedom to choose the $\xi^{\mu}$. Therefore,
+fixing 
+\begin{equation}
+    \square \xi^{\alpha} = \partial_{\beta}X^{\alpha\beta},
+\end{equation}
+vanishes the vast majorities of terms of Eq.\eqref{efe X}. The only, non-trivial term 
+comes from the wave operator, leading to
+\begin{equation}
+    \square X_{\mu\nu} = -\frac{16\Pi G}{c^4}\mathcal{T}_{\mu\nu},
+\end{equation}
+which for the special vacuum case $\mathcal{T}_{\mu\nu} = 0$, reduces the above equation
+to 
+\begin{equation}
+    \square X_{\mu\nu} = 0.
+\end{equation}
+The above result, is known as the gravitational wave equation. In the next subsection we will
+be dealing with the problem of counting the degrees of freedom of a gravitational wave.
 
 
 \end{document}
