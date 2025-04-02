@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1743618526.59356 "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" "build/notes_gw.pdf" "notes_gw" 1743618527.09668 0
-  "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" 1743618526.33945 14243 7b2c9ef8af5f588da6f3cbf190808c51 ""
+["pdflatex"] 1743618579.54538 "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" "build/notes_gw.pdf" "notes_gw" 1743618580.00648 0
+  "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" 1743618578.71359 14275 b7b3f50583a05d6cbbd948b5a9eaf4bb ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -85,10 +85,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733927331.53012 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733926895 8221429 80dd5d253ef9dba42a4b3b572f28d5d1 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "build/notes_gw.aux" 1743618527.04557 1908 428f98d2ab5de9f05d4a5e59cda3352b "pdflatex"
-  "build/notes_gw.out" 1743618527.04615 629 907612e6df23bc50055e5e05e07c0dae "pdflatex"
-  "build/notes_gw.toc" 1743618527.04635 334 bad25f97a491db02eb8d43b1f10d3313 "pdflatex"
-  "notes_gw.tex" 1743618526.33945 14243 7b2c9ef8af5f588da6f3cbf190808c51 ""
+  "build/notes_gw.aux" 1743618579.9563 2033 20844848b3f3336c5547fd6b4ad32086 "pdflatex"
+  "build/notes_gw.out" 1743618579.95674 782 f37e88c9a8337fff2f5f803290b01276 "pdflatex"
+  "build/notes_gw.toc" 1743618579.95691 418 d269eb25815fa03ebeb51f0e352dc62e "pdflatex"
+  "notes_gw.tex" 1743618578.71359 14275 b7b3f50583a05d6cbbd948b5a9eaf4bb ""
   (generated)
   "build/notes_gw.aux"
   "build/notes_gw.log"
