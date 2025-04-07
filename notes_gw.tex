@@ -20,10 +20,23 @@
 
 \section*{Notation and conventions}
 
-I am working with the following conventions, for the metric tensor
+Throughout this notes I will be using the metric signature
 \begin{equation}
-    \left(-1, +1, +1, +1\right)
+    \left(-1, +1, +1, +1\right).
 \end{equation}
+Greek indices run over the four dimensional manifold spacetime, 
+from $0$ to $3$, whereas latin indices run over only the spatial 
+dimensions, from $1$ to $3$. Additionally, I am using the Einstein 
+summation convention, where, repeated indices, indicate a summation.
+
+The Minkowski metric tensor is written as $\eta_{\mu\nu}$ and 
+an arbitrary metric tensor is $g_{\mu\nu}$. Partial derivatives 
+are denoted by $\partial$ which can be acting on the four dimensions
+or three dimensions, and can be written with a commas $g_{\mu\nu,\alpha}$. 
+Covariant derivatives are defined with the symmetric standard connection
+$\nabla$, which is compatible with the metric tensor such that 
+$\nabla_{\alpha}g_{\beta\gamma} = g_{\beta\gamma;\alpha} = 0$
+where I used semicolons for its denotation.
 
 \section{Linear general relativity}
 
@@ -372,6 +385,9 @@ $h_{00} = 0$. In a nutshell, the constraint are
     h_{\mu 0 } & = 0, & h & = 0, & \partial_{i}h_{ij} & = 0.
 \end{align}
 This is known as the \textit{transverse-traceless} gauge (TT).
+
+
+\subsection{Scalar-Vector-Tensor decomposition}
 
 
 \end{document}
