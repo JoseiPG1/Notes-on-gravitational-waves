@@ -272,8 +272,9 @@ replacing the transformation rule leads to
     - \frac{1}{2}\eta_{\mu\nu}\eta^{\alpha\beta}\left(
     h_{\alpha\beta} - \partial_{\beta}\xi_{\alpha} - \partial_{\alpha}\xi_{\beta}\right).
 \end{equation}
-THe above expression can be simplified 
+The above expression can be simplified 
 \begin{equation}
+    \label{gauge transformation X}
     X'_{\mu\nu} = X_{\mu\nu} - \partial_{\mu}\xi_{\nu} 
     - \partial_{\nu}\xi_{\mu} + \eta_{\mu\nu}\partial^{\sigma}\xi_{\sigma},
 \end{equation}
@@ -330,8 +331,47 @@ to choose to fix the four components of the displacement vector $\xi^{\mu}$,
 and hence, reduced even further the number of independent components of the 
 perturbation to 2 independent components. This is known as the residual gauge.
 
-A
+An intuitive way of seen this reduction of the independent components of the
+perturbation tensor comes from knowing that initially there are 10 independent
+components of a symmetric tensor of rank $2$ tensor. Then by using the Lorentz
+gauge restriction 
+\begin{equation}
+    \partial_{\beta}X'^{\alpha\beta} = 0,
+\end{equation}
+which lead to four different equations, meaning that, there are four more 
+constraint to impose, reducing the number of 10 independent components to
+6. Then, we can perform another gauge transformation by an infinitesimal
+vector displacement $\xi^{\mu}$ 
+\begin{equation}
+    X'_{\mu\nu} \rightarrow X'_{\mu\nu} + \xi_{\mu\nu},
+\end{equation}
+where $\xi_{\mu\nu}$ is defined as 
+\begin{equation}
+    \xi_{\mu\nu} \equiv \eta_{\mu\nu}\partial^{\alpha}\xi_{\alpha} 
+    -\partial_{\mu}\xi_{\nu} -\partial_{\nu}\xi_{\mu}.
+\end{equation}
+Therefore, choosing properly the vector $\xi_{\mu}$ such that $\box \xi_{\mu\nu} = 0$,
+it is possible to reduced 4 more degrees of freedom of the perturbation 
+tensor. Leaving only $2$ independent components, which are known as the $2$
+polarization, $+$ and $x$.
 
+Exploiting the residual gauge symmetry, it is possible to eliminate
+directly components of the perturbation tensor. Using Eq.\eqref{gauge transformation X}
+it is possible to vanishes the trace and the spatial-temporal components of the 
+perturbation $X = 0$ and $X_{0i} = 0$. As a consequence of this, the perturbation
+and the variable change are the same $X_{\mu\nu} = h_{\mu\nu}$. From the Lorentz gauge
+condition Eq.\eqref{gauge condition}
+\begin{equation}
+    \dot{h}_{00} + \partial_{i}h_{i0} = 0,
+\end{equation}
+from which, we infer that the temporal-temporal components is a function of only
+the spatial coordinates. As this component does not depend on the time coordinate, (
+which is our concern, because gravitational waves are time-dependent), we can set 
+$h_{00} = 0$. In a nutshell, the constraint are
+\begin{align}
+    h_{\mu 0 } & = 0, & h & = 0, & \partial_{i}h_{ij} & = 0.
+\end{align}
+This is known as the \textit{transverse-traceless} gauge (TT).
 
 
 \end{document}
