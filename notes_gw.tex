@@ -300,15 +300,18 @@ after simplification of terms, leads to
 At this point, recall that we still have the freedom to choose the $\xi^{\mu}$. Therefore,
 fixing 
 \begin{equation}
-    \square \xi^{\alpha} = \partial_{\beta}X^{\alpha\beta},
+    \label{gauge condition}
+    \square \xi^{\alpha} = \partial_{\beta}X^{\alpha\beta} 
+    \rightarrow \partial_{\beta}X'^{\alpha\beta} = 0,
 \end{equation}
-vanishes the vast majorities of terms of Eq.\eqref{efe X}. The only, non-trivial term 
-comes from the wave operator, leading to
+this is known as the Lorentz gauge, which vanishes the vast majorities of 
+terms of Eq.\eqref{efe X}. The only, non-trivial term comes from the wave 
+operator, leading to
 \begin{equation}
     \square X_{\mu\nu} = -\frac{16\Pi G}{c^4}\mathcal{T}_{\mu\nu},
 \end{equation}
-which for the special vacuum case $\mathcal{T}_{\mu\nu} = 0$, reduces the above equation
-to 
+which for the special vacuum case $\mathcal{T}_{\mu\nu} = 0$, reduces the 
+above equation to 
 \begin{equation}
     \square X_{\mu\nu} = 0.
 \end{equation}
@@ -316,5 +319,19 @@ The above result, is known as the gravitational wave equation. In the next subse
 be dealing with the problem of counting the degrees of freedom of a gravitational wave.
 
 \subsection{Degrees of freedom}
+
+The perturbation has 16 independent components which must be determined. 
+However, because it is defined as a symmetric tensor it only has 10 
+independent components. Moreover, due to the gauge condition 
+Eq.\eqref{gauge condition} there are four additional equations/constraint 
+that must be satisfied, leaving only 6 independent components. Nonetheless, 
+this choice, does not completely fixes the gauge, we still have the freedom 
+to choose to fix the four components of the displacement vector $\xi^{\mu}$, 
+and hence, reduced even further the number of independent components of the 
+perturbation to 2 independent components. This is known as the residual gauge.
+
+A
+
+
 
 \end{document}
