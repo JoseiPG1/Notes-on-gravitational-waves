@@ -142,6 +142,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 OUTPUT build/notes_gw.toc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT build/notes_gw.bbl
+INPUT build/notes_gw.bbl
+INPUT build/notes_gw.bbl
 INPUT build/notes_gw.aux
 INPUT build/notes_gw.out
 INPUT build/notes_gw.out
