@@ -12,4 +12,5 @@ Meetings topics
 - [x] 24-03-2025, gws equations using a FRW background.
 - [x] 31-03-2025, solutions to the gws equations and polarization tensor basis.
 - [x] 07-04-2025, properties of the polarization tensor basis, left and right basis polarization.
-- [x] 14-04-2025, action invariance under parity transformation, arxiv 1912.06104v2. 
+- [x] 14-04-2025, parity breaking symmetry, arxiv 1912.06104v2.
+- [ ] 22-04-2025, parity breaking symmetry Chern-Simons gravity. 
