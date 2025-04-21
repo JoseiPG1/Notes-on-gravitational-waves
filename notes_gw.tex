@@ -444,13 +444,55 @@ these are gauge invariants are
 \begin{align}
     \Phi & \equiv \phi + \dot{B} - \frac{1}{2}\ddot{E}, &
     \Theta & \equiv -2\psi - \frac{1}{3}\nabla^2E, &
-    \sum_{i} & \equiv S_i - \dot{F}_i, &
+    \Sigma_{i} & \equiv S_i - \dot{F}_i, &
     h_{ij} & \equiv h_{ij},
 \end{align}
 there are two scalar gauge invariants, one vector invariant and one tensor invariant
 quantity.
 
-The
+A similar procedure can be applied to the stress energy momentum tensor
+\begin{align}
+    \label{energy momentum tensor svt}
+    \mathcal{T}_{00} & = \rho, \\ 
+    \mathcal{T}_{0i} & = \partial_{i}u + u_i, \\
+    \mathcal{T}_{ij} & = \Pi_{ij} + \partial_{i}v_{j} + \partial_{j}v_{i} + p\delta_{ij}
+    + \left(\partial_{i}\partial_{j} - \frac{1}{3}\delta_{ij}\nabla^{2}\right)\sigma,
+\end{align}
+where $\rho$, $u$, $p$ and $\sigma$ are scalar functions, $u_i$ and $v_i$ are vectors
+whose divergence vanishes $\partial_{i}u_{i} = 0 $ and $\partial_{i}v_{i} = 0$, and $\Pi_{ij}$
+is a traceless tensor (by construction), therefore $\Pi = 0$, whose divergence vanishes 
+$\partial_{i}\Pi_{ij} = 0$. The natural next step, would be to build-up the rules of
+gauge transformation of the components of the energy-momentum tensor, however because 
+the energy-momentum tensor must be zero in the background, all the components
+(perturbed) are gauge invariants, this is known as the Steward Walker lemma 
+\cite{stewart1993advanced}.
+
+From the conservation law, 
+\begin{equation}
+    \nabla_{\mu}\mathcal{T}^{\mu\nu} = \partial_{\mu}\mathcal{T}^{\mu\nu}
+    + \Gamma^{\mu}{}_{\mu\lambda}\mathcal{T}^{\lambda\nu}
+    + \Gamma^{\nu}{}_{\mu\lambda}\mathcal{T}^{\mu\lambda} \sim \partial_{\mu}\mathcal{T}^{\mu\nu}.
+\end{equation}
+Replacing Eq.\eqref{energy momentum tensor svt} into the above equation leads to the following
+constraints
+\begin{align}
+    \nabla^{2}u & = \dot{\rho}, & 
+    \nabla^{2}\sigma & = \frac{3}{2}\left(\dot{u} - p\right), & 
+    \nabla^{2}v_{i} & = \dot{u}_{i}, & 
+\end{align}
+
+The next step, is to put all this ingredients together into Einstein's field equation. A 
+straightforward computation leads to the following field equations
+\begin{align}
+    \label{efe linear with matter}
+    \nabla^2 \Theta & = -\rho, \\
+    \nabla^2 \Phi & = \left(\rho + 3p - 3\dot{u}\right), \\
+    \nabla^2 \Sigma_{i} & = - 2S_{i}, \\
+    \square h_{ij} & = -2\Pi_{ij}.
+\end{align}
+These are the set of differential equations, where there is only one wave equations coming
+from the $h_{ij}$. The other fields obey a Poisson-like equation. Notice that, both sides of 
+the Eqs.\eqref{efe linear with matter} are gauge invariants, as they should be.
 
 
 \bibliographystyle{utphys}
