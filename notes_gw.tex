@@ -3,12 +3,14 @@
 % new section new page
 \usepackage{titlesec}
 \newcommand{\sectionbreak}{\clearpage}
-% hyperreferences
+% hyper-references
 \usepackage{hyperref}
 % align equation
 \usepackage{amsmath}
 % figures such as square
 \usepackage{amssymb}
+% appendix
+\usepackage[toc,page]{appendix}
 % title
 \title{Personal notes on gravitational waves}
 % author
@@ -271,7 +273,8 @@ Is worth mention that the Riemann tensor is invariant under a gauge transformati
 Therefore, we have the freedom to choose or fix the vector $\xi^{\mu}$ as we liked. 
 Additionally, Eq.\eqref{gauge transformation of perturbation} is only valid using a 
 Minkowski background, if we were working on a curved spacetime background, there will
-be additional terms. As the rule of gauge transformation is written in 
+be additional terms, the most general expression can be found in at the end of this 
+section. As the rule of gauge transformation is written in 
 Eq.\eqref{gauge transformation of perturbation}, then is trivial to compute the gauge
 transformation of the auxiliary variable $X_{\mu\nu}$
 \begin{equation}
@@ -494,7 +497,42 @@ These are the set of differential equations, where there is only one wave equati
 from the $h_{ij}$. The other fields obey a Poisson-like equation. Notice that, both sides of 
 the Eqs.\eqref{efe linear with matter} are gauge invariants, as they should be.
 
-\section{Gravitational waves in a curved spacetime}
+\subsection{Gravitational waves in a curved spacetime}
+
+Now, lets move on one step a head and use the FRW metric as the background metric
+\begin{equation}
+    g_{\mu\nu} = \bar{g}_{\mu\nu} + h_{\mu\nu},
+\end{equation}
+where the bar quantities make references to background objects. The distance between two
+points can be compute using
+\begin{align}
+    \mathrm{d}s^{2} = a^{2}(\eta)\left(-\mathrm{d}\eta^2 
+    + \delta_{ij}\mathrm{d}x^{i}\mathrm{d}x^{j}
+    + h_{ij}\mathrm{d}x^{i}\mathrm{d}x^{j}\right),
+\end{align}
+where $h_{ij}$ is in the TT-gauge, and I am also working in conformal time, defined 
+by the relation 
+\begin{equation}
+    \label{conformal time relation}
+    a\mathrm{d}\eta = \mathrm{d}t.
+\end{equation} 
+Next, you can compute the Christoffel symbols, the Riemann curvature tensor and the 
+Ricci scalar. These are the geometrical objects that you need to compute the Einstein's 
+field equations. The perturbed Einstein's field equation leads to just one equation
+\begin{equation}
+    h''_{ij} + 2\mathcal{H}h'_{ij} - \nabla^{2}h_{ij} = 8\pi G a^{2}\bar{p}\Pi_{ij},
+\end{equation}
+where the time derivatives are take with respect to the conformal time, and the Hubble function
+$\mathcal{H}$ is defined also in conformal time. Using Eq.\eqref{conformal time relation} you can
+work the above equation into physics time
+\begin{equation}
+    \ddot{h}_{ij} + 3H\dot{h}_{ij} - \frac{\nabla^{2}}{a^{2}}h_{ij} = 8\pi G \bar{p}\Pi_{ij}
+\end{equation}
+
+To finalized this section, I just want to deduced the most general gauge transformation
+of a rank 2 tensor, having a curved background. This is a more general expression that the one
+found in Eq.\eqref{gauge transformation of perturbation}
+
 
 \bibliographystyle{utphys}
 \bibliography{references}
