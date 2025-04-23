@@ -13,7 +13,8 @@ Meetings topics
 - [x] 31-03-2025, solutions to the gws equations and polarization tensor basis.
 - [x] 07-04-2025, properties of the polarization tensor basis, left and right basis polarization.
 - [x] 14-04-2025, parity breaking symmetry, arxiv 1912.06104v2.
-- [ ] 22-04-2025, parity breaking symmetry Chern-Simons gravity. 
+- [x] 22-04-2025, parity breaking symmetry Chern-Simons gravity.
+- [ ] 29-04-2025, starting two research projects, data analysis and theoretical framework.
 
 To be done
 - [ ] Field equations of the Chern-Simons gravity action. 
