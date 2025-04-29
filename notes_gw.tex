@@ -565,7 +565,51 @@ whose solution in terms of the original variable is
 
 To finalized this section, I just want to deduced the most general gauge transformation
 of a rank 2 tensor, having a curved background. This is a more general expression that the one
-found in Eq.\eqref{gauge transformation of perturbation}. 
+found in Eq.\eqref{gauge transformation of perturbation}. To obtain this expression consider
+the coordinate transformation
+\begin{equation}
+    B'_{\mu\nu}(x') = \frac{\partial x^\alpha}{\partial x^{\mu}}\frac{\partial x^\beta}{\partial x^{\nu}}
+    B_{\alpha\beta}(x),
+\end{equation}
+under a gauge transformation it follows that
+\begin{equation}
+    B'_{\mu\nu}(x') = \left(\delta ^{\alpha}_{\mu} - \partial_{\mu}\xi^{\alpha}\right)
+    \left(\delta ^{\beta}_{\nu} - \partial_{\nu}\xi^{\beta}\right)
+    B_{\alpha\beta}(x),
+\end{equation}
+expanding the above expression and neglecting $\xi^2$ terms leads to
+\begin{equation}
+    B'_{\mu\nu}(x') = B_{\mu\nu}(x) -  B_{\mu\alpha}(x)\partial_{\nu}\xi^{\alpha}
+    - B_{\beta\nu}(x)\partial_{\mu}\xi^{\beta}.
+\end{equation}
+Notice that, the LHS is in the $x'$ coordinate system, whereas the RHS is written in $x$
+coordinate system. In order solve the discrepancy, it is required to perform a Taylor series
+expansion
+\begin{align}
+    B'_{\mu\nu}(x') & = B_{\mu\nu}(x' - \xi) -  B_{\mu\alpha}(x' - \xi)\partial_{\nu}\xi^{\alpha}
+    - B_{\beta\nu}(x' - \xi)\partial_{\mu}\xi^{\beta},\\
+    B'_{\mu\nu}(x') & = B_{\mu\nu}(x') - \xi^{\alpha}\partial_{\alpha}B_{\mu\nu}(x') -  
+    B_{\mu\alpha}(x')\partial_{\nu}\xi^{\alpha} - B_{\beta\nu}(x')\partial_{\mu}\xi^{\beta}.
+\end{align}
+At this point, the $B$ tensor can be decomposed with as a background plus a perturbation, and 
+considering that the background in both coordinate system are similar, leads to
+\begin{equation}
+    \label{general gauge transformation}
+    \delta B'_{\mu\nu} = \delta B_{\mu\nu} - \bar{B}_{\mu\alpha}\partial_{\nu}\xi^{\alpha}
+    - \bar{B}_{\beta\nu}\partial_{\mu}\xi^{\beta} - \xi^{\alpha}\partial_{\alpha}\bar{B}_{\mu\nu}.
+\end{equation} 
+Notice that, if the background quantity is trivial (vanishes), then, all the perturbation are by 
+construction gauge invariants. This is a direct proof of the Steward-Walker lemma. Additionally,
+Eq. \eqref{general gauge transformation} was derived for an arbitrary background, if we use this
+result to compute how the perturbation $h_{\mu\nu}$ transform leads to
+\begin{align}
+    h'_{\mu\nu} = h_{\mu\nu} - h_{\mu\alpha}\partial_{\nu}\xi^{\alpha}
+    - h_{\beta\nu}\partial_{\mu}\xi^{\beta} - \xi^{\alpha}\partial_{\alpha}h_{\mu\nu},
+\end{align}
+however, the last term vanishes due to its higher order in the perturbation series. Therefore,
+the above expression is reduced to one already found in 
+Eq. \eqref{gauge transformation of perturbation}.
+
 
 \section{Chern-Simons gravity}
 

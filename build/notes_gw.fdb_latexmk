@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex build/notes_gw"] 1745935351.41319 "build/notes_gw.aux" "build/notes_gw.bbl" "build/notes_gw" 1745935532.8048 0
+["bibtex build/notes_gw"] 1745938812.61329 "build/notes_gw.aux" "build/notes_gw.bbl" "build/notes_gw" 1745939189.81895 0
   "./references.bib" 1745273326.39751 1058 a8b2bd5900de56063a94c3e6cc703396 ""
   "./utphys.bst" 1745273326.3976 19518 eaf83afed38e56415ce7588fffb8fee5 ""
-  "build/notes_gw.aux" 1745935532.59109 3191 8c4cb5c725116dd473d71230e9d3f82b "pdflatex"
+  "build/notes_gw.aux" 1745939189.6043 3301 b5d788bdb0f0d4e29706ea116c0013a3 "pdflatex"
   (generated)
   "build/notes_gw.bbl"
   "build/notes_gw.blg"
   (rewritten before read)
-["pdflatex"] 1745935532.10845 "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" "build/notes_gw.pdf" "notes_gw" 1745935532.80493 0
-  "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" 1745935531.83531 26973 6cbb307cdbddd2f067656c5deec7749e ""
+["pdflatex"] 1745939189.10858 "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" "build/notes_gw.pdf" "notes_gw" 1745939189.81912 0
+  "/Users/joseperdiguero/Documents/GitHub/Notes-on-gravitational-waves-/notes_gw.tex" 1745939188.84828 29429 d955f3cbf974fb6df518bf7839ed48bc ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -98,11 +98,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733927331.53012 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733926895 8221429 80dd5d253ef9dba42a4b3b572f28d5d1 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "build/notes_gw.aux" 1745935532.59109 3191 8c4cb5c725116dd473d71230e9d3f82b "pdflatex"
-  "build/notes_gw.bbl" 1745935351.49896 448 3d843e46173e4b6ebf83cf40f506b038 "bibtex build/notes_gw"
-  "build/notes_gw.out" 1745935532.59153 1614 8bd56212d3c57b7c0133afce05caa258 "pdflatex"
-  "build/notes_gw.toc" 1745935532.5917 786 8071b46569c3541f7c03d73895368ccf "pdflatex"
-  "notes_gw.tex" 1745935531.83531 26973 6cbb307cdbddd2f067656c5deec7749e ""
+  "build/notes_gw.aux" 1745939189.6043 3301 b5d788bdb0f0d4e29706ea116c0013a3 "pdflatex"
+  "build/notes_gw.bbl" 1745938812.71258 448 3d843e46173e4b6ebf83cf40f506b038 "bibtex build/notes_gw"
+  "build/notes_gw.out" 1745939189.60476 1614 8bd56212d3c57b7c0133afce05caa258 "pdflatex"
+  "build/notes_gw.toc" 1745939189.60492 786 8071b46569c3541f7c03d73895368ccf "pdflatex"
+  "notes_gw.tex" 1745939188.84828 29429 d955f3cbf974fb6df518bf7839ed48bc ""
   (generated)
   "build/notes_gw.aux"
   "build/notes_gw.log"
