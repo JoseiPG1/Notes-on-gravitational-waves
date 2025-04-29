@@ -17,4 +17,5 @@ Meetings topics
 - [ ] 29-04-2025 $\to$ 02-05-205, starting two research projects, data analysis and theoretical framework.
 
 To be done
-- [ ] Field equations of the Chern-Simons gravity action. 
+- [ ] Field equations of the Chern-Simons gravity action.
+- [ ] Add specifics details, Christoffel symbols, Riemann curvature, Ricci tensor.
