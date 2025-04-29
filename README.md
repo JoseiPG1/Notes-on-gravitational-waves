@@ -18,4 +18,4 @@ Meetings topics
 
 To be done
 - [ ] Field equations of the Chern-Simons gravity action.
-- [ ] Add specifics details, Christoffel symbols, Riemann curvature, Ricci tensor.
+- [ ] Add specifics details, the Christoffel symbols, the Riemann curvature and the Ricci tensor.
