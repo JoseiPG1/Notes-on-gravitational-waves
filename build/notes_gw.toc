@@ -5,5 +5,5 @@
 \contentsline {subsection}{\numberline {1.4}Degrees of freedom}{8}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Scalar-Vector-Tensor decomposition}{9}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Gravitational waves in a curved spacetime}{11}{subsection.1.6}%
-\contentsline {section}{\numberline {2}Chern-Simons gravity}{12}{section.2}%
-\contentsline {section}{\numberline {3}Polynomial parity breaking}{13}{section.3}%
+\contentsline {section}{\numberline {2}Chern-Simons gravity}{13}{section.2}%
+\contentsline {section}{\numberline {3}Polynomial parity breaking}{14}{section.3}%

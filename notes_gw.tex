@@ -531,15 +531,37 @@ work the above equation into physics time
 From the above expression it is not obvious the classification type of solutions. However,
 by using the following variable change
 \begin{equation}
-    H_{ij}\left(\bold{k},\eta\right) = a h_{ij}\left(\bold{k},\eta\right),
+    X_{ij}\left(\bold{k},\eta\right) = a h_{ij}\left(\bold{k},\eta\right),
 \end{equation}
 the differential equation turns to 
 \begin{equation}
-    H_{ij}\left(\bold{k},\eta\right) + \left(k^2 - \frac{a''}{a}\right)H_{ij}\left(\bold{k},\eta\right)
+    X_{ij}\left(\bold{k},\eta\right) + \left(k^2 - \frac{a''}{a}\right)X_{ij}\left(\bold{k},\eta\right)
     = 16\pi G a^3\Pi_{ij}.
 \end{equation}
 Looking for analytical solutions in vacuum $\Pi_{ij} = 0$, there is a clear distinction between
-two branches of solutions. The
+two branches of solutions. The first case is given by the condition $k^2 \gg \mathcal{H}^2$ known
+as the sub-Hubble sphere
+\begin{equation}
+    X''\left(\bold{k},\eta\right) + k^2X\left(\bold{k},\eta\right) = 0,
+\end{equation}
+which is the equation of the well known harmonic oscillator, whose solution is
+\begin{equation}
+    X\left(\bold{k},\eta\right) = A_r(\bold{k})e^{ik\eta} + B_r(\bold{k})e^{-ik\eta},
+\end{equation}
+or in terms of the original variable
+\begin{equation}
+    h_{r}\left(\bold{k},\eta\right) = \frac{A_r}{a(\eta)}(\bold{k})e^{ik\eta} + 
+    \frac{B_r}{a(\eta)}(\bold{k})e^{-ik\eta}.
+\end{equation}
+The second case is $k^2 \ll \mathcal{H}^2$, this are the super-Hubble spheres
+\begin{equation}
+    X''\left(\bold{k},\eta\right) - \frac{a''}{a}\left(\bold{k},\eta\right) = 0,
+\end{equation}
+whose solution in terms of the original variable is
+\begin{equation}
+    h_{r}\left(\bold{k},\eta\right) = A_r(\bold{k}) + 
+    B_r(\bold{k})\int \frac{\mathrm{d}\eta}{a^2(\eta')}.
+\end{equation}
 
 To finalized this section, I just want to deduced the most general gauge transformation
 of a rank 2 tensor, having a curved background. This is a more general expression that the one
