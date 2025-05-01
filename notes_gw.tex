@@ -403,7 +403,7 @@ First, lets decomposed the perturbation tensor as follows
 \begin{align}
     h_{00} & = -2\phi, \\
     h_{0i} & = \partial_i B + S_i, \\
-    h_{ji} & = h_{ij} + \partial_{i} F_{j} + \partial_{j} F_{i} - 2\psi\delta_{ij}, 
+    h_{ij} & = h_{ij} + \partial_{i} F_{j} + \partial_{j} F_{i} - 2\psi\delta_{ij}, 
     + \left(\partial_{i}\partial_{j} - \frac{1}{3}\delta_{ij}\nabla^{2}\right)E,
 \end{align}
 where $\phi$, $B$, $\psi$ and $E$ are scalars functions, $S_i$ and $F_i$ 
@@ -421,7 +421,7 @@ In the same way, the vector displacement $\xi_{\mu}$ can also be decomposed
 \begin{equation}
     \xi_{\mu} = \left(d_0, \partial_i d + d_i\right),
 \end{equation}
-and using the gauge transformation rule written in Eq.\eqref{gauge transformation X},
+and using the gauge transformation rule written in Eq.\eqref{gauge transformation of perturbation},
 it is straightforward to derived how the components of the perturbation tensor transform
 under a coordinate gauge transformation. Take for example the $h_{tt}$ component
 \begin{equation}
@@ -435,15 +435,23 @@ then, the rule of transformation can be written as
 \begin{equation}
     \phi' = \phi + \dot{d}_0.
 \end{equation}
-Applying the same idea to the other scalars, vectors and tensor components of the
-tensor perturbation, we find that 
+The same idea should be applied to the different components of the SVT decomposition. The scalar
+components transform as follow
 \begin{align}
-    \phi' & = \phi + \dot{d}_0, & B' & = B - d_0 - \dot{d}, & E & = E - 2d, \\
+    \phi' & = \phi + \dot{d}_0, & B' & = B - d_0 - \dot{d} \\
+    \psi' & = \psi +\frac{1}{3}\nabla^2d & E & = E - 2d,
+\end{align}
+the vector parts transfrom as
+\begin{align}
     S_i' & = S_i - \dot{d}_i, & F_i & = F_i - d_i.
 \end{align}
+and finally the tensor part
+\begin{equation}
+    h'_{ij} = h_{ij}
+\end{equation}
 Once the rules of gauge transformation are known for the STV decomposition, it is
 straightforward to build-up gauge invariants using the components of the perturbation, 
-these are gauge invariants are
+these gauge invariants are
 \begin{align}
     \Phi & \equiv \phi + \dot{B} - \frac{1}{2}\ddot{E}, &
     \Theta & \equiv -2\psi - \frac{1}{3}\nabla^2E, &
@@ -451,7 +459,37 @@ these are gauge invariants are
     h_{ij} & \equiv h_{ij},
 \end{align}
 there are two scalar gauge invariants, one vector invariant and one tensor invariant
-quantity.
+quantity. It is straightforward the proof that these are gauge invariants, lets 
+consider the first gauge invariant object and perform the coordinate gauge transformation
+\begin{equation}
+    \Phi \to \Phi' = \phi' + \dot{B}' - \frac{1}{2}\ddot{E}',
+\end{equation}
+replacing the rules of transformation for each object leads to
+\begin{equation}
+    \Phi' = \Phi + \dot{d}_0 + \dot{B} - \dot{d_0} - \ddot{d} - 
+    \frac{1}{2}\left(\ddot{E} - 2\ddot{d}\right),
+\end{equation}
+which, after simple algebra simplification turns to
+\begin{equation}
+    \Phi' = \Phi + \dot{B} - \frac{1}{2}\ddot{E}.
+\end{equation}
+The proof for the other three gauge invariants follows the same idea.
+
+Lets compute the geometrical part of Einstein's field Eq. 
+\eqref{einsteins equation flat + perturbation}, to make this more easy to see, I will write 
+down the equation
+\begin{equation}
+        \partial^{\alpha}\partial_{\mu}h_{\alpha\nu} 
+        -  \square h_{\mu\nu} - \partial_{\nu}\partial_{\mu}h
+        + \partial_{\nu}\partial^{\alpha}h_{\alpha\mu}
+        - \eta_{\mu\nu}\partial_{\alpha}\partial_{\beta}h^{\alpha\beta} 
+        - \eta_{\mu\nu}\square h = \frac{16\pi G}{c^4}\mathcal{T}_{\mu\nu}.
+\end{equation}
+Let's compute the $tt$ components of the above equation
+\begin{equation}
+    \left(-2\ddot{\phi} + \nabla^{2}\dot{\gamma}\right) + \left(2\ddot{\phi} - 2\nabla^2\phi\right)
+    + \left(-\ddot{H} + 2\ddot{\phi}\right)
+\end{equation}
 
 A similar procedure can be applied to the stress energy momentum tensor
 \begin{align}
@@ -613,9 +651,9 @@ Eq. \eqref{gauge transformation of perturbation}.
 
 \section{Chern-Simons gravity}
 
-Consider the Chern-Simons action coupled with the Einstein-Hilbert action
+Consider the Chern-Simons action coupled with the Einstein-Hilbert action is
 \begin{equation}
-    S = \int \mathrm{d}^4x 
+    S = \int \mathrm{d}^4x \sqrt{-g}\mathcal{R}
 \end{equation}
 
 \section{Polynomial parity breaking}
