@@ -786,6 +786,7 @@ the coefficients as follows
 \end{align}
 Replacing the above expression for $b^{i}_{n,m}$ in Eq. \eqref{B building blocks} leads to
 \begin{align}
+    \label{gw equation pv}
     \bar{B} & = \sum_{n,m} \mathcal{H}\left(\bar{b}^{\mathcal{H}}_{n,m} 
     + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta b^{\mathcal{H}}_{n,m}\right)
     \left(\frac{k}{\Lambda a}\right)^{n}\left(\frac{\mathcal{H}}{\Lambda a}\right)^{m} \notag \\
@@ -803,8 +804,47 @@ whose parity symmetry es broken
     \frac{\beta\left(\eta\right)}{\Lambda^{(n-1)}a^{(n-1)}}\right)\right) \notag \\ 
     & + k^2 h_{r,l}\left(1 + \lambda_{r,l}k^{m-1}
     \left(\frac{\gamma(\eta)}{\Lambda^m a^m}\mathcal{H}\right) 
-    + \frac{\delta_{m}(\eta)}{\Lambda^{m-1}a^{m-1}}\right) = 0
+    + \frac{\delta_{m}(\eta)}{\Lambda^{m-1}a^{m-1}}\right) = 0.
 \end{align}
+The general solution to the above equation is
+\begin{equation}
+    h_{r,l}(\eta)  = A_{r,l}(\eta)e^{-i\left(\phi(\eta) -k_{i}x^{i}\right)}, \\
+\end{equation} 
+ands its first and second derivatives can be compute directly from the above expression 
+\begin{align}
+    h'_{r,l}(\eta) & = -i\phi'(\eta)A_{r,l}(\eta)e^{-i\left(\phi(\eta) -k_{i}x^{i}\right)}, \\
+    h''_{r,l}(\eta) & = -A_{r,l}(\eta)e^{-i\left(\phi(\eta) -k_{i}x^{i}\right)} 
+    \left(i\phi''(\eta) + \phi'^{2}(\eta)\right),
+\end{align} 
+where it was assume that the amplitude of the gravitational wave varies 
+on much longer timescales than the phase, therefore it is possible to neglected its 
+time-conformal derivatives. Replacing the solution in Eq. \eqref{gw equation pv} leads to
+\begin{align}
+    & -\left(i\phi''(\eta) + \phi'^{2}(\eta)\right) -i\phi'(\eta)
+    \left(2\mathcal{H} + \lambda_{r,l}k^{n}
+    \left(\frac{\alpha_{n}}{\Lambda^n a^n}\mathcal{H} + 
+    \frac{\beta\left(\eta\right)}{\Lambda^{(n-1)}a^{(n-1)}}\right)\right) \notag \\
+    & k^2 \left(1 + \lambda_{r,l}k^{m-1}
+    \left(\frac{\gamma(\eta)}{\Lambda^m a^m}\mathcal{H}\right) 
+    + \frac{\delta_{m}(\eta)}{\Lambda^{m-1}a^{m-1}}\right) = 0.
+\end{align}
+which can be rewritten as
+\begin{align}
+    & \phi''(\eta) - i\phi'^{2}(\eta) + \phi'(\eta)
+    \left(2\mathcal{H} + \lambda_{r,l}k^{n}
+    \left(\frac{\alpha_{n}}{\Lambda^n a^n}\mathcal{H} + 
+    \frac{\beta\left(\eta\right)}{\Lambda^{(n-1)}a^{(n-1)}}\right)\right) \notag \\
+    & i k^2 \left(1 + \lambda_{r,l}k^{m-1}
+    \left(\frac{\gamma(\eta)}{\Lambda^m a^m}\mathcal{H}\right) 
+    + \frac{\delta_{m}(\eta)}{\Lambda^{m-1}a^{m-1}}\right) = 0.
+\end{align}
+Now, assuming that parity breaking terms are small deviations from general relativity,
+it is possible to linearized the wave equation by taking
+\begin{equation}
+    \phi = \bar{\phi} + \delta \phi,
+\end{equation}
+where $\bar{\phi}$ is the usual background solution of general relativity which has 
+the form of $\bar{\phi} ' = \pm k - i\mathcal{H}$.
 
 \bibliographystyle{utphys}
 \bibliography{references}
