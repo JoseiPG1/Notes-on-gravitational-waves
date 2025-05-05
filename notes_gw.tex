@@ -695,7 +695,84 @@ Consider the Chern-Simons action coupled with the Einstein-Hilbert action is
 
 \section{Polynomial parity breaking}
 
-The most general 
+The most general gravitational wave propagation equation is of the form
+\begin{equation}
+    Ah'' + Bh' + Ch' = 0,
+\end{equation}
+where time derivatives are taking in conformal time. Without any loss of generalities 
+and assuming $A \neq 0 $ the above equation can be written as 
+\begin{equation}
+    h'' + \bar{B}h' + \bar{C}h = 0.
+\end{equation}
+The idea is to write down the most generality gravitational wave propagation equation that 
+breaks the symmetry of parity, and the fundamental building blocks we can use are 
+\begin{equation}
+     k ,\mathcal{H} ,\Lambda a ,
+\end{equation}
+which are the only elements that have units of inverse of conformal time, this is a necessary
+constraint that must be satisfied. Writing down the most general polynomial expression using those
+fields are
+\begin{align}
+    \bar{B} & = k\bar{B}_{k} + \mathcal{H}\bar{B}_{\mathcal{H}} + \Lambda a\bar{B}_{\Lambda}
+    + f(\varphi')\bar{B}_{\varphi}, \label{B polynomial}\\
+    \bar{C} & = k\bar{C}_{kk} + \mathcal{H}\bar{C}_{\mathcal{H}\mathcal{H}} 
+    + \Lambda a\bar{C}_{\Lambda\Lambda} + f(\varphi')\bar{C}_{\varphi\varphi}. \label{C polynomial}
+\end{align}
+It is possible to write down the coefficients as a dimensionless quantities 
+\begin{align}
+    \bar{B}_{i} = \sum b^{i}_{nm}\left(\eta\right)\left(\frac{k}{\Lambda a}\right)^{n}
+    \left(\frac{\mathcal{H}}{\Lambda a}\right)^{m}, \label{B sum} \\
+    \bar{C}_{ij} = \sum c^{ij}_{nm}\left(\eta\right)\left(\frac{k}{\Lambda a}\right)^{n}
+    \left(\frac{\mathcal{H}}{\Lambda a}\right)^{m} \label{C sum}, 
+\end{align}
+where $n>0$ and $m>0$, additionally, for consistency, the polynomial functions must be well defined
+in the limits, such that it is possible to recover the Minkowski spacetime
+\begin{align}
+    \mathcal{H} &\to 0, & k &\to 0, & f(\varphi') & \to 0
+\end{align}
+Notice that, in Eq. \eqref{B polynomial} there are three fundamental building blocks, however, in 
+its respective equation Eq. \eqref{B sum} there are only two fundamental fields, the reason for that,
+is the degeneracy of the fields. It is possible to compute all configurations of those three fields
+using only those two written down in Eq. \eqref{B sum}, to see this, consider the following example:
+lets compute one coefficient 
+\begin{equation}
+    n = 1, m = 0 \to k\bar{B}_{k} = k b^{k}_{10}\left(\frac{k}{\Lambda a}\right) = b^{k}_{10}\frac{k^2}{\Lambda a}
+\end{equation}
+and compute the degenerate term that produces the same contribution
+\begin{equation}
+    n = 2, m = 0 \to \Lambda a \bar{B}_{\Lambda} = \Lambda a b^{\Lambda}_{20}\left(\frac{k}{\Lambda a}\right)^2
+    = b^{\Lambda}_{20} \frac{k^2}{\Lambda a},
+\end{equation}
+as you can see, the term $b^{\Lambda}_{20}$ is already contained in $b^{\kappa}_{10}$. Lets work 
+another example
+\begin{equation}
+    n = 0, m = 1 \to k\bar{B}_{k} = k b^{k}_{01}\left(\frac{\mathcal{H}}{\Lambda a}\right) = b^{k}_{01}\frac{k\mathcal{H}}{\Lambda a},
+\end{equation}
+and the degenerate term that leads to the same result
+\begin{equation}
+    n = 1, m = 0 \to \mathcal{H}\bar{B}_{\mathcal{H}} = \mathcal{H} b^{\mathcal{H}}_{10}\left(\frac{k}{\Lambda a}\right)
+    = b^{k}_{10}\frac{k\mathcal{H}}{\Lambda a},
+\end{equation}
+as expected, $b^{k}_{10} = b^{k}_{01}$. Lets work one final example,
+\begin{equation}
+    n = 3, m = 0 \to k\bar{B}_{k} = k b^{k}_{30}\left(\frac{k}{\Lambda a}\right)^3 
+    = b^{k}_{10}\frac{k^4}{\left(\Lambda a\right)^3},
+\end{equation}
+and the other term
+\begin{equation}
+    n = 4, m = 0 \to \Lambda a\bar{B}_{\Lambda} = \Lambda a b^{k}_{40}\left(\frac{k}{\Lambda a}\right)^4 
+    = b^{k}_{10}\frac{k^4}{\left(\Lambda a\right)^3}.
+\end{equation}
+This should make clear, that, the only two fundamental building blocks necessary to define the most
+general polynomial term is
+\begin{equation}
+    \bar{B} = \mathcal{H}\bar{B}_{\mathcal{H}} + \Lambda a \bar{B}_{\Lambda}.
+\end{equation}
+A similar analysis can be done for the $\bar{C}$ contribution, leading two only two types
+of term
+\begin{equation}
+    \bar{C} = k^2 \bar{C}_{kk} + \left(\Lambda a\right)^2 \bar{C}_{\Lambda\Lambda}
+\end{equation}
 
 
 \bibliographystyle{utphys}
