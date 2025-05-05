@@ -736,44 +736,75 @@ is the degeneracy of the fields. It is possible to compute all configurations of
 using only those two written down in Eq. \eqref{B sum}, to see this, consider the following example:
 lets compute one coefficient 
 \begin{equation}
-    n = 1, m = 0 \to k\bar{B}_{k} = k b^{k}_{10}\left(\frac{k}{\Lambda a}\right) = b^{k}_{10}\frac{k^2}{\Lambda a}
+    n = 1, m = 0 \to k\bar{B}_{k} = k b^{k}_{1,0}\left(\frac{k}{\Lambda a}\right) 
+    = b^{k}_{1,0}\frac{k^2}{\Lambda a}
 \end{equation}
 and compute the degenerate term that produces the same contribution
 \begin{equation}
-    n = 2, m = 0 \to \Lambda a \bar{B}_{\Lambda} = \Lambda a b^{\Lambda}_{20}\left(\frac{k}{\Lambda a}\right)^2
-    = b^{\Lambda}_{20} \frac{k^2}{\Lambda a},
+    n = 2, m = 0 \to \Lambda a \bar{B}_{\Lambda} = \Lambda a b^{\Lambda}_{2,0}\left(\frac{k}{\Lambda a}\right)^2
+    = b^{\Lambda}_{2,0} \frac{k^2}{\Lambda a},
 \end{equation}
 as you can see, the term $b^{\Lambda}_{20}$ is already contained in $b^{\kappa}_{10}$. Lets work 
 another example
 \begin{equation}
-    n = 0, m = 1 \to k\bar{B}_{k} = k b^{k}_{01}\left(\frac{\mathcal{H}}{\Lambda a}\right) = b^{k}_{01}\frac{k\mathcal{H}}{\Lambda a},
+    n = 0, m = 1 \to k\bar{B}_{k} = k b^{k}_{0,1}\left(\frac{\mathcal{H}}{\Lambda a}\right) 
+    = b^{k}_{0,1}\frac{k\mathcal{H}}{\Lambda a},
 \end{equation}
 and the degenerate term that leads to the same result
 \begin{equation}
-    n = 1, m = 0 \to \mathcal{H}\bar{B}_{\mathcal{H}} = \mathcal{H} b^{\mathcal{H}}_{10}\left(\frac{k}{\Lambda a}\right)
-    = b^{k}_{10}\frac{k\mathcal{H}}{\Lambda a},
+    n = 1, m = 0 \to \mathcal{H}\bar{B}_{\mathcal{H}} = \mathcal{H} b^{\mathcal{H}}_{1,0}\left(\frac{k}{\Lambda a}\right)
+    = b^{k}_{1,0}\frac{k\mathcal{H}}{\Lambda a},
 \end{equation}
 as expected, $b^{k}_{10} = b^{k}_{01}$. Lets work one final example,
 \begin{equation}
-    n = 3, m = 0 \to k\bar{B}_{k} = k b^{k}_{30}\left(\frac{k}{\Lambda a}\right)^3 
-    = b^{k}_{10}\frac{k^4}{\left(\Lambda a\right)^3},
+    n = 3, m = 0 \to k\bar{B}_{k} = k b^{k}_{3,0}\left(\frac{k}{\Lambda a}\right)^3 
+    = b^{k}_{3,0}\frac{k^4}{\left(\Lambda a\right)^3},
 \end{equation}
 and the other term
 \begin{equation}
-    n = 4, m = 0 \to \Lambda a\bar{B}_{\Lambda} = \Lambda a b^{k}_{40}\left(\frac{k}{\Lambda a}\right)^4 
-    = b^{k}_{10}\frac{k^4}{\left(\Lambda a\right)^3}.
+    n = 4, m = 0 \to \Lambda a\bar{B}_{\Lambda} = \Lambda a b^{k}_{4,0}\left(\frac{k}{\Lambda a}\right)^4 
+    = b^{k}_{4,0}\frac{k^4}{\left(\Lambda a\right)^3}.
 \end{equation}
 This should make clear, that, the only two fundamental building blocks necessary to define the most
 general polynomial term is
 \begin{equation}
-    \bar{B} = \mathcal{H}\bar{B}_{\mathcal{H}} + \Lambda a \bar{B}_{\Lambda}.
+    \label{B building blocks}
+    \bar{B} = \mathcal{H}\bar{B}_{\mathcal{H}} + \Lambda a \bar{B}_{\Lambda},
 \end{equation}
-A similar analysis can be done for the $\bar{C}$ contribution, leading two only two types
-of term
+and also neglecting second order terms in $\mathcal{H}$. A similar analysis can be done for the 
+$\bar{C}$ contribution, leading two only two types of term
 \begin{equation}
-    \bar{C} = k^2 \bar{C}_{kk} + \left(\Lambda a\right)^2 \bar{C}_{\Lambda\Lambda}
+    \label{C building blocks}
+    \bar{C} = k^2 \bar{C}_{kk} + \left(\Lambda a\right)^2 \bar{C}_{\Lambda\Lambda}.
 \end{equation}
 
+Assuming small deviations from general relativity due to the parity breaking symmetry, we can expand
+the coefficients as follows
+\begin{align}
+    b^{i}_{n,m} = \bar{b}^{i}_{n,m} + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta b^{i}_{n,m} \label{B deviation},\\
+    c^{ij}_{n,m} = \bar{c}^{ij}_{n,m} + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta c^{ij}_{n,m} \label{C deviation}.
+\end{align}
+Replacing the above expression for $b^{i}_{n,m}$ in Eq. \eqref{B building blocks} leads to
+\begin{align}
+    \bar{B} & = \sum_{n,m} \mathcal{H}\left(\bar{b}^{\mathcal{H}}_{n,m} 
+    + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta b^{\mathcal{H}}_{n,m}\right)
+    \left(\frac{k}{\Lambda a}\right)^{n}\left(\frac{\mathcal{H}}{\Lambda a}\right)^{m} \notag \\
+    & + \sum_{n,m} \Lambda a \left(\bar{b}^{\Lambda}_{n,m} 
+    + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta b^{\mathcal{H}}_{n,m}\right)
+    \left(\frac{k}{\Lambda a}\right)^{n}\left(\frac{\mathcal{H}}{\Lambda a}\right)^{m}.
+\end{align}
+
+
+Using the above identification, we can derived the most general gravitational wave equation
+whose parity symmetry es broken
+\begin{align}
+    & h''_{r,l} + h'_{r,l}\left(2\mathcal{H} + \lambda_{r,l}k^{n}
+    \left(\frac{\alpha_{n}}{\Lambda^n a^n}\mathcal{H} + 
+    \frac{\beta\left(\eta\right)}{\Lambda^{(n-1)}a^{(n-1)}}\right)\right) \notag \\ 
+    & + k^2 h_{r,l}\left(1 + \lambda_{r,l}k^{m-1}
+    \left(\frac{\gamma(\eta)}{\Lambda^m a^m}\mathcal{H}\right) 
+    + \frac{\delta_{m}(\eta)}{\Lambda^{m-1}a^{m-1}}\right) = 0
+\end{align}
 
 \bibliographystyle{utphys}
 \bibliography{references}
