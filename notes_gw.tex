@@ -791,10 +791,30 @@ Replacing the above expression for $b^{i}_{n,m}$ in Eq. \eqref{B building blocks
     + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta b^{\mathcal{H}}_{n,m}\right)
     \left(\frac{k}{\Lambda a}\right)^{n}\left(\frac{\mathcal{H}}{\Lambda a}\right)^{m} \notag \\
     & + \sum_{n,m} \Lambda a \left(\bar{b}^{\Lambda}_{n,m} 
-    + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta b^{\mathcal{H}}_{n,m}\right)
+    + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta b^{\Lambda}_{n,m}\right)
     \left(\frac{k}{\Lambda a}\right)^{n}\left(\frac{\mathcal{H}}{\Lambda a}\right)^{m}.
 \end{align}
-
+It is possible to extract more information from the above expression by considering the general
+relativity background. Consider the case $n = m = 0$ then
+\begin{equation}
+    \bar{B} = \mathcal{H}\bar{b}^{\mathcal{H}}_{0,0} + \mathcal{H} 
+    \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta b^{\mathcal{H}}_{0,0} +
+    \Lambda a \bar{b}^{\Lambda}_{0,0} 
+    + \lambda^{n}_{r,l}\lambda^{m}_{r,l} \delta \bar{b}^{\Lambda}_{0,0}, 
+\end{equation}
+from which is clear that, in order to recover general relativity it is required that (this is only
+by working with the background)
+\begin{align}
+    \bar{b}^{\mathcal{H}}_{0,0} & = 2, & \bar{b}^{\mathcal{H}}_{n,m} & = 0, & 
+    \bar{b}^{\Lambda}_{n,m} & = 0, 
+\end{align}
+where the background object is completely defined. Moving to the perturbation part, it is required
+that $k \gg \mathcal{H}$, meaning that gravitational wavelengths are smaller compared with the Hubble
+scale, therefore, we will keep $\mathcal{H}$ at linear order, coupled to higher order of $k$.
+\begin{align} 
+    \delta b^{\mathcal{H}}_{0,0} & = 0 & \bar{b}^{\Lambda}_{0,0} & = 0 & 
+    \delta \bar{b}^{\Lambda}_{0,0} & = 0
+\end{align}
 
 Using the above identification, we can derived the most general gravitational wave equation
 whose parity symmetry es broken
