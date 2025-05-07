@@ -827,20 +827,39 @@ $\bar{C}$, which I am not writing for the moment, whose final form is
     \bar{C} = k^2 + \lambda_{r,l} \sum_{n=1}\left(
         \mathcal{H}\Lambda a \delta c^{\Lambda}_{n,1}\left(\frac{k}{\Lambda a}\right)^n
         + \delta c^{k}_{n,0}k^2 \left(\frac{k}{\Lambda a}\right)^n
-    \right)
+    \right).
 \end{equation}
-
+Thus, we arrived to the most general modify gravitational wave equation 
+\begin{align}
+    & h'' + \left(2\mathcal{H} + \lambda_{r,l}\sum_{1}
+    \left(\delta b^{\mathcal{H}}_{n,0}\mathcal{H} \left(\frac{k}{\Lambda a}\right)^n 
+    + \delta b^{\Lambda}_{n,0}\Lambda a \left(\frac{k}{\Lambda a}\right)^n\right)\right)h' \notag \\
+    & + \left(k^2 + \lambda_{r,l} \sum_{n=1}\left(
+        \mathcal{H}\Lambda a \delta c^{\Lambda}_{n,1}\left(\frac{k}{\Lambda a}\right)^n
+        + \delta c^{k}_{n,0}k^2 \left(\frac{k}{\Lambda a}\right)^n\right)\right)h = 0.
+\end{align}
+The equation can be recast using the following definitions
+\begin{align}
+    \alpha_{n}\left(\eta\right) & = \delta b^{\mathcal{H}}_{n,0} & 
+    \beta_{n}\left(\eta\right) & = \delta b^{\lambda}_{n,0} & 
+    \gamma_{m}\left(\eta\right) & = \delta c^{\lambda}_{n,m} & 
+    \delta m \left(\eta\right) & = \delta c^{k}_{n,0}
+\end{align}
 Using the above identification, we can derived the most general gravitational wave equation
 whose parity symmetry es broken
 \begin{align}
+    \label{gw pb equation}
     & h''_{r,l} + h'_{r,l}\left(2\mathcal{H} + \lambda_{r,l}k^{n}
-    \left(\frac{\alpha_{n}}{\Lambda^n a^n}\mathcal{H} + 
-    \frac{\beta\left(\eta\right)}{\Lambda^{(n-1)}a^{(n-1)}}\right)\right) \notag \\ 
+    \left(\frac{\alpha_{n}\left(\eta\right)}{\left(\Lambda a\right)^n}\mathcal{H} + 
+    \frac{\beta\left(\eta\right)}{\left(\Lambda a\right)^{(n-1)}}\right)\right) \notag \\ 
     & + k^2 h_{r,l}\left(1 + \lambda_{r,l}k^{m-1}
-    \left(\frac{\gamma(\eta)}{\Lambda^m a^m}\mathcal{H}\right) 
-    + \frac{\delta_{m}(\eta)}{\Lambda^{m-1}a^{m-1}}\right) = 0.
+    \left(\frac{\gamma(\eta)}{\left(\Lambda a\right)^m}\mathcal{H}\right) 
+    + \frac{\delta_{m}(\eta)}{\left(\Lambda a\right)^{m-1}}\right) = 0,
 \end{align}
-The general solution to the above equation is
+where the sum is written down implicitly. Also notice, that $n$ stands for the 
+odd integers whereas $m$ are the even integers.
+
+The general solution to Eq. \eqref{gw equation pv} is
 \begin{equation}
     h_{r,l}(\eta)  = A_{r,l}(\eta)e^{-i\left(\phi(\eta) -k_{i}x^{i}\right)}, \\
 \end{equation} 
