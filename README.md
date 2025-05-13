@@ -15,7 +15,7 @@ Meetings topics
 - [x] 14-04-2025, parity breaking symmetry, arxiv 1912.06104v2.
 - [x] 22-04-2025, parity breaking symmetry Chern-Simons gravity.
 - [x] 29-04-2025, starting two research projects, data analysis and theoretical framework.
-- [ ] 06-05-2025, working on the theorical paper, new ideas for coupling a kinetic term that breaks the parity symmetry.
+- [ ] 06-05-2025 \to 15-05-2025, working on the theorical paper, new ideas for coupling a kinetic term that breaks the parity symmetry.
 
 To be done
 - [ ] Field equations of the Chern-Simons gravity action.
