@@ -490,13 +490,13 @@ computation leads to
 \begin{align}
     & \left(2\ddot{\phi} + \nabla^{2}\dot{B}\right) + \left(-2\ddot{\phi} + 2\nabla^2\phi\right)
     + \left(6\ddot{\psi} + 2\ddot{\phi}\right) + \left(2\ddot{\phi} + \nabla^2\dot{B}\right)\\
-    & + \left(-2\ddot{\phi} - 2\nabla^2 \dot{B} -2\nabla^2\psi - \frac{2}{3}\nabla^2\nabla^2E\right)
+    & + \left(-2\ddot{\phi} - 2\nabla^2 \dot{B} -2\nabla^2\psi + \frac{2}{3}\nabla^2\nabla^2E\right)
     +\left(-6\ddot{\psi} + 6\nabla^2\psi -2\ddot{\phi} - 2\nabla^2\phi\right), 
 \end{align}
 which after simplification is reduced to
 \begin{equation}
-    G_{00} = \frac{1}{3}\nabla^2\left(-2\psi - \nabla^2 E\right) \to
-    G_{00} = \nabla^2\Theta,
+    G_{00} = -\frac{1}{3}\nabla^2\left(-2\psi - \nabla^2 E\right) \to
+    G_{00} = -\nabla^2\Theta,
 \end{equation}
 alternatively, it can be written in terms of gauge invariant as seen in the above right side. in
 a similar manner, it can be computed out all the other components of the Einstein tensor
@@ -563,10 +563,10 @@ The next step, is to put all this ingredients together into Einstein's field equ
 straightforward computation leads to the following field equations
 \begin{align}
     \label{efe linear with matter}
-    \nabla^2 \Theta & = -\rho, \\
-    \nabla^2 \Phi & = \left(\rho + 3p - 3\dot{u}\right), \\
-    \nabla^2 \Sigma_{i} & = - 2S_{i}, \\
-    \square h_{ij} & = -2\Pi_{ij}.
+    \nabla^2 \Theta & = -8\pi G\rho, \\
+    \nabla^2 \Phi & = 4\pi G\left(\rho + 3p - 3\dot{u}\right), \\
+    \nabla^2 \Sigma_{i} & = - 2\pi G S_{i}, \\
+    \square h_{ij} & = -16\pi G\Pi_{ij}.
 \end{align}
 These are the set of differential equations, where there is only one wave equations coming
 from the $h_{ij}$. The other fields obey a Poisson-like equation. Notice that, both sides of 
